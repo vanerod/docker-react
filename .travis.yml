@@ -9,3 +9,14 @@ before_install:
 
 script:
   - docker run -e CI=true vanerod/docker-react npm run test
+deploy:
+  provider: elasticbeanstalk
+  region: 'us-east-1'
+  app: 'Dockerenv'
+  env: 'Dockerenv-env'
+  bucket_name: 'elasticbeanstalk-us-east-1-441813618543'
+  bucket_path: 'Dockerenv'
+  on:
+    branch: master
+  access_key_id: $AWS_docker
+  secret_access_key: $AWS_docker_secret
