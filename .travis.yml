@@ -18,5 +18,5 @@ deploy:
   bucket_path: 'Dockerenv'
   on:
     branch: master
-  access_key_id: $AWS-docker
-  secret_access_key: $AWS-docker-secret
+  access_key_id: $AWS_DOCKER
+  secret_access_key: $AWS_DOCKER_SECRET
