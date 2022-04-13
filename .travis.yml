@@ -19,4 +19,4 @@ deploy:
   on:
     branch: master
   access_key_id: $AWS_DOCKER
-  secret_access_key: $AWS_DOCKER_SECRET
+  secret_access_key: $AWS_DCOKER_SECRET
